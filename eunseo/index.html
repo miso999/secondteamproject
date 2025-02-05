@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../public/reset.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="navsWrap.css" />
+    <link rel="stylesheet" href="progressbar.css" />
     <script src="index.js" defer></script>
 
     <link
@@ -36,31 +37,29 @@
         <ul class="util_list">
           <li id="trendyHyundai"><b>Trendy</b> Hyundai</li>
           <li class="language">
-            <p>KR</p>
-            <i class="fa-solid fa-caret-down"></i>
+            <div class="select_lan">
+              <p>KR</p>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <ul class="selectlan_blur">
+              <li id="en">EN</li>
+              <li id="cn">CN</li>
+              <li id="worldWide">월드와이드</li>
+              <li id="global">상용글로벌</li>
+            </ul>
           </li>
-
-          <li><i class="fa-regular fa-user"></i></li>
+          <li class="login">
+            <i id="arrow_down" class="fa-regular fa-user"></i>
+            <div class="login_blur">
+              <p id="perLogin">개인 로그인 ></p>
+              <p id="corLogin">법인 로그인></p>
+            </div>
+          </li>
           <li id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></li>
           <li><i class="fa-solid fa-bars-staggered"></i></li>
         </ul>
       </nav>
     </header>
-
-    <div class="search__wrap">
-      <div class="search_box">
-        <div class="search_input">
-          <input
-            class="input"
-            type="text"
-            placeholder="검색어를 입력해주세요."
-          />
-          <i class="fa-solid fa-circle-xmark"></i>
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <i id="close_btn" class="fa-solid fa-xmark"></i>
-      </div>
-    </div>
 
     <div class="navs__wrap">
       <nav class="navs__nav">
@@ -84,5 +83,26 @@
         </ul>
       </nav>
     </div>
+
+    <div class="progress">
+      <div class="bar"></div>
+    </div>
+
+    <div class="search__wrap">
+      <div class="search_box">
+        <div class="search_input">
+          <input
+            class="input"
+            type="text"
+            placeholder="검색어를 입력해주세요."
+          />
+          <i class="fa-solid fa-circle-xmark"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <i id="close_btn" class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+
+    <div class="test" style="height: 200vh"></div>
   </body>
 </html>
