@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/reset.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="navsWrap.css" />
+    <script src="index.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <img
+          id="header_img"
+          src="https://blog.kakaocdn.net/dn/bgbn4B/btqwQkVHqgl/h1te0fy07UbzgMgt5AUkFK/img.jpg"
+          alt=""
+        />
+        <ul class="inb_list">
+          <li id="model">모델</li>
+          <li id="parchase">구매/이벤트</li>
+          <li id="service">서비스/멤버십</li>
+          <li id="digital">디지털/고객지원</li>
+          <li id="brand">브랜드</li>
+          <li id="shop">Shop</li>
+        </ul>
+        <ul class="util_list">
+          <li id="trendyHyundai"><b>Trendy</b> Hyundai</li>
+          <li class="language">
+            <p>KR</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </li>
+
+          <li><i class="fa-regular fa-user"></i></li>
+          <li id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li><i class="fa-solid fa-bars-staggered"></i></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="search__wrap">
+      <div class="search_box">
+        <div class="search_input">
+          <input
+            class="input"
+            type="text"
+            placeholder="검색어를 입력해주세요."
+          />
+          <i class="fa-solid fa-circle-xmark"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <i id="close_btn" class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+
+    <div class="navs__wrap">
+      <nav class="navs__nav">
+        <ul class="nav_menus">
+          <li>수소/전기차</li>
+          <li>N</li>
+          <li>승용</li>
+          <li>SUV</li>
+          <li>MPV</li>
+          <li>소형트럭&택시</li>
+          <li>트럭</li>
+          <li>버스</li>
+          <li id="genesis" class="ico_link">
+            <p>GENESIS</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </li>
+          <li id="casper" class="ico_link">
+            <p>CASPER</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
