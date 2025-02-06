@@ -70,3 +70,54 @@ close_btn.addEventListener("click", () => {
 // 스크롤 내리면 바가 채워짐
 // 스크롤 올리면 header 아래로 내려옴
 // 스크롤 올리면 바가 다시 위로 감
+
+let lastScrollTop = 0; // 이전 스크롤 위치
+const header = document.querySelector("#header");
+//navs__wrap
+let ticking = false; // 여러 번 실행되는 문제를 방지하기 위한 변수
+function handleScroll() {
+  let currentScroll = window.scrollY || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // 스크롤을 내리면 첫 번째 헤더를 숨김
+    header.style.transform = "translateY(-100%)"; // 첫 번째 헤더를 위로 숨깁니다.
+    navs__wrap.style.top = "0px";
+    search__wrap.style.top = "0px";
+  } else {
+    // 스크롤을 올리면 첫 번째 헤더를 나타냄
+    header.style.transform = "translateY(0)";
+    navs__wrap.style.top = "80px";
+    search__wrap.style.top = "80px";
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // 음수 방지
+  ticking = false; // 다시 호출 가능하도록 설정
+}
+
+// 스크롤이 일어날 때마다 handleScroll 함수 실행
+window.addEventListener("scroll", function () {
+  if (!ticking) {
+    window.requestAnimationFrame(function () {
+      handleScroll();
+    });
+    ticking = true;
+  }
+});
+
+// progress bar 만들기
+const progress_bar = document.querySelector("#progress-bar");
+const progressBarInner = document.createElement("div");
+progressBarInner.id = "progress-bar-inner";
+progress_bar.appendChild(progressBarInner);
+
+const updateProgressBar = () => {
+  const scrollTop = window.screenY || document.documentElement.scrollTop;
+  const docHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+
+  progressBarInner.style.width = scrollPercent + "%";
+};
+
+window.addEventListener("scroll", updateProgressBar);

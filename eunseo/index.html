@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="header__nav">
         <img
           id="header_img"
@@ -55,7 +55,9 @@
               <p id="corLogin">법인 로그인></p>
             </div>
           </li>
-          <li id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li id="searchIcon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </li>
           <li><i class="fa-solid fa-bars-staggered"></i></li>
         </ul>
       </nav>
@@ -84,9 +86,7 @@
       </nav>
     </div>
 
-    <div class="progress">
-      <div class="bar"></div>
-    </div>
+    <div id="progress-bar"></div>
 
     <div class="search__wrap">
       <div class="search_box">
@@ -103,6 +103,7 @@
       </div>
     </div>
 
-    <div class="test" style="height: 200vh"></div>
+    <main class="test" style="height: 200vh">아픈데 프로젝트라니...</main>
+    <!-- main에 두 헤더의 높이 만큼 여백을 줌 135 (margin-top) -->
   </body>
 </html>
