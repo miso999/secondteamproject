@@ -1,0 +1,77 @@
+.company_info_container {
+  background-color: #f0f0f3;
+  border: 1px solid white;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.company_info_container_layout {
+  background-color: white;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 50px;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 1px solid #c2a499;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.layout_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information {
+  display: flex;
+}
+
+.information_list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.box_title {
+  font-weight: 700;
+}
+
+.subtitle {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  border-left: 2px solid #efefef;
+  text-align: left;
+}
+.information_list:first-child .subtitle {
+  border-left: 0 none;
+}
+.subtitle > button {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid white;
+  background-color: white;
+  gap: 20px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.subtitle > button::after {
+  content: "";
+}
+
+.title_company {
+  font-weight: 600;
+  gap: 20px;
+}
+
+.title_IR {
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
