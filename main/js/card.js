@@ -53,8 +53,8 @@ export const carCardCreat = (carCatgory, space) => {
           </div>
         </div>
         <div class="buy_detail_button_box">
-          <button class="buy">구매 상담 신청</button
-          ><button class="buy">내차 만들기</button>
+          <button id="buy1" class="buy">구매 상담 신청</button
+          ><button id="buy2" class="buy">내차 만들기</button>
         </div>
       </div>
     </li>

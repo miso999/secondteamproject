@@ -10,7 +10,7 @@
 
   display: none;
 
-  scroll-margin: 50px;
+  scroll-margin: 55px;
 }
 
 .detail_inner {
@@ -23,7 +23,7 @@
 .back_page_button {
   border: none;
   background-color: #f8f4f3;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .item_detail_box_name {

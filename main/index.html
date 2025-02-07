@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script type="module" src="js/index.js" defer></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/detailbox.css" />
     <link rel="stylesheet" href="css/info.css" />
@@ -11,9 +12,95 @@
     <link rel="stylesheet" href="css/model.css" />
     <link rel="stylesheet" href="css/footer_black.css" />
     <link rel="stylesheet" href="css/info.css" />
-    <script type="module" src="js/index.js" defer></script>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/navsWrap.css" />
+    <link rel="stylesheet" href="css/progressbar.css" />
+    <script src="js/move.js" defer></script>
   </head>
   <body>
+    <header id="header">
+      <nav class="header__nav">
+        <img
+          id="header_img"
+          src="https://blog.kakaocdn.net/dn/bgbn4B/btqwQkVHqgl/h1te0fy07UbzgMgt5AUkFK/img.jpg"
+          alt=""
+        />
+        <ul class="inb_list">
+          <li id="model">모델</li>
+          <li id="parchase">구매/이벤트</li>
+          <li id="service">서비스/멤버십</li>
+          <li id="digital">디지털/고객지원</li>
+          <li id="brand">브랜드</li>
+          <li id="shop">Shop</li>
+        </ul>
+        <ul class="util_list">
+          <li id="trendyHyundai"><b>Trendy</b> Hyundai</li>
+          <li class="language">
+            <div class="select_lan">
+              <p>KR</p>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <ul class="selectlan_blur">
+              <li id="en">EN</li>
+              <li id="cn">CN</li>
+              <li id="worldWide">월드와이드</li>
+              <li id="global">상용글로벌</li>
+            </ul>
+          </li>
+          <li class="login">
+            <i id="arrow_down" class="fa-regular fa-user"></i>
+            <div class="login_blur">
+              <p id="perLogin">개인 로그인 ></p>
+              <p id="corLogin">법인 로그인></p>
+            </div>
+          </li>
+          <li id="searchIcon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </li>
+          <li><i class="fa-solid fa-bars-staggered"></i></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="navs__wrap">
+      <nav class="navs__nav">
+        <ul class="nav_menus">
+          <li class="links">수소/전기차</li>
+          <li class="links">N</li>
+          <li class="links">승용</li>
+          <li class="links">SUV</li>
+          <li>MPV</li>
+          <li>소형트럭&택시</li>
+          <li>트럭</li>
+          <li>버스</li>
+          <li id="genesis" class="ico_link">
+            <p>GENESIS</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </li>
+          <li id="casper" class="ico_link">
+            <p>CASPER</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="progress-bar"></div>
+
+    <div class="search__wrap">
+      <div class="search_box">
+        <div class="search_input">
+          <input
+            class="input"
+            type="text"
+            placeholder="검색어를 입력해주세요."
+          />
+          <i class="fa-solid fa-circle-xmark"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <i id="close_btn" class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
     <main id="model" class="model">
       <section id="electronicCarList1" class="CarList">
         <div class="modelList"><span>수소 / 전기차 (9)</span></div>

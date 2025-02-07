@@ -9,6 +9,9 @@
   gap: 10px;
 }
 
+.Detail_button:hover {
+  background-color: #f8f4f3;
+}
 .item_box_name {
   font-size: 19px;
   font-weight: 800;
