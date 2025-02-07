@@ -32,3 +32,29 @@ export const closedetail = () => {
     });
   });
 };
+
+export const closedetail2 = () => {
+  const details = document.querySelectorAll(".item_detail");
+  const buttonLists = document.querySelectorAll(".Detail_button_list");
+
+  document.querySelectorAll(".Detail_button").forEach((button, i) =>
+    button.addEventListener("click", () => {
+      details.forEach((detail) => (detail.style.display = "none"));
+      buttonLists.forEach((list) => (list.style.marginBottom = "0px"));
+
+      details[i].style.display = "flex";
+      details[i].scrollIntoView({ behavior: "smooth", block: "start" });
+      buttonLists[i].style.marginBottom = "480px";
+    })
+  );
+
+  document.querySelectorAll(".back_page_button").forEach((button, i) =>
+    button.addEventListener("click", (e) => {
+      e.stopPropagation();
+      details[i].style.display = "none";
+      buttonLists[i].style.marginBottom = "0px";
+    })
+  );
+};
+
+document.querySelectorAll(".class").forEach;

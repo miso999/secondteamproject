@@ -7,10 +7,11 @@ import {
   passengerCarArr,
   suvArr,
 } from "./array.js";
+import { Buycar } from "./buyCar.js";
 import { carCardCreat } from "./card.js";
 import { closedetail } from "./close.js";
 import { setupLinkEvents, setupSearchToggle } from "./eventHandlers.js";
-import { footeropen } from "./footerlistopen copy.js";
+import { footeropen } from "./footerlistopen.js";
 import { setupScrollHandler } from "./scrollHandler.js";
 
 carCardCreat(electronicCarArr, electronicCarList1);
@@ -24,3 +25,4 @@ setupLinkEvents(linkUrlList);
 setupSearchToggle();
 setupScrollHandler();
 setupProgressBar();
+Buycar();
