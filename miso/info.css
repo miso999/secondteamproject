@@ -52,16 +52,9 @@
 }
 .subtitle > button {
   display: inline-block;
-  width: 100%;
-  border: 1px solid white;
+  border: none;
   background-color: white;
-  gap: 20px;
   text-align: left;
-  margin: 0 auto;
-}
-
-.subtitle > button::after {
-  content: "";
 }
 
 .title_company {
