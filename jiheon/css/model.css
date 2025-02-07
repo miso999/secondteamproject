@@ -1,0 +1,19 @@
+.CarList {
+  width: 100vw;
+  max-width: 1400px;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.modelList {
+  width: 100vw;
+  padding: 30px;
+}
+
+.modelList > span {
+  font-size: 30px;
+  font-weight: 900;
+  border-top: 2px solid black;
+}

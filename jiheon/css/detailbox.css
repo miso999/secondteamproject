@@ -1,0 +1,91 @@
+.item_detail {
+  width: 100vw;
+  height: 480px;
+  background-color: #f8f4f3;
+  position: absolute;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+
+  display: none;
+
+  scroll-margin: 50px;
+}
+
+.detail_inner {
+  display: flex;
+}
+
+.button_box {
+  text-align: right;
+}
+.back_page_button {
+  border: none;
+  background-color: #f8f4f3;
+  font-size: 40px;
+}
+
+.item_detail_box_name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.item_detail_explanation {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.item_detail_box_title {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.information {
+  display: flex;
+  gap: 20px;
+}
+
+.Read_more {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(47, 47, 89);
+}
+
+.informationName {
+  color: gray;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.informationList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bar {
+  color: gray;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.informationText {
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.buy_detail_button_box {
+  display: flex;
+  gap: 30px;
+}
+.buy {
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  background-color: rgb(26, 37, 92);
+
+  padding: 10px 150px;
+}
