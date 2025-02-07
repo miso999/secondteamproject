@@ -75,6 +75,7 @@ footer {
   background-color: black;
   color: rgb(165, 165, 165);
   border: 1px solid rgb(165, 165, 165);
+  display: none;
 }
 
 .lower_box_list > li {

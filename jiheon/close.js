@@ -33,6 +33,8 @@ export const closedetail = () => {
   });
 };
 
+const close = () => {};
+
 export const closedetail2 = () => {
   const details = document.querySelectorAll(".item_detail");
   const buttonLists = document.querySelectorAll(".Detail_button_list");

@@ -308,3 +308,22 @@ export const linkUrlList = [
     url: "https://www.hyundai.com/kr/ko/corporation-login",
   },
 ];
+
+export const moveList = [
+  {
+    clickId: document.querySelector("#electric"),
+    moveId: document.querySelector("#electronicCarList1"),
+  },
+  {
+    clickId: document.querySelector("#n"),
+    moveId: document.querySelector("#Ncar"),
+  },
+  {
+    clickId: document.querySelector("#passenger"),
+    moveId: document.querySelector("#passengerCar"),
+  },
+  {
+    clickId: document.querySelector("#suv"),
+    moveId: document.querySelector("#SUV"),
+  },
+];

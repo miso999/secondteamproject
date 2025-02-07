@@ -1,3 +1,8 @@
+const electronicCarList1 = document.getElementById("electronicCarList1");
+const Ncar = document.getElementById("Ncar");
+const passengerCar = document.getElementById("passengerCar");
+const SUV = document.getElementById("SUV");
+
 export const carCardCreat = (carCatgory, space) => {
   carCatgory.forEach((v, i) => {
     const carList = document.createElement("ul");
