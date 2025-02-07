@@ -1,3 +1,7 @@
+import { setupLinkEvents, setupSearchToggle } from "./eventHandlers.js";
+import { setupProgressBar } from "./progressBar.js";
+import { setupScrollHandler } from "./scrollHandler.js";
+
 // click 하면 링크주소로 이동(a태그)
 const linkUrlList = [
   { id: "header_img", url: "https://www.hyundai.com/kr/ko/e/" },
@@ -38,35 +42,9 @@ const linkUrlList = [
   },
 ];
 
-[...linkUrlList].forEach((v) => {
-  const value = document.querySelector("#" + v.id);
-  value.addEventListener("click", () => {
-    open(v.url);
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  setupLinkEvents(linkUrlList);
+  setupSearchToggle();
+  setupScrollHandler();
+  setupProgressBar();
 });
-
-// 검색창 누르면 나오게 하기
-const searchIcon = document.querySelector("#searchIcon");
-const search__wrap = document.querySelector(".search__wrap");
-const navs__wrap = document.querySelector(".navs__wrap");
-
-searchIcon.addEventListener("click", () => {
-  if (search__wrap.style.display == "none") {
-    search__wrap.style.setProperty("display", "block");
-    navs__wrap.style.setProperty("display", "none");
-  } else {
-    search__wrap.style.setProperty("display", "none");
-    navs__wrap.style.setProperty("display", "block");
-  }
-});
-
-const close_btn = document.querySelector("#close_btn");
-close_btn.addEventListener("click", () => {
-  search__wrap.style.setProperty("display", "none");
-  navs__wrap.style.setProperty("display", "block");
-});
-
-// 스크롤 내리면 header 위로 올라감
-// 스크롤 내리면 바가 채워짐
-// 스크롤 올리면 header 아래로 내려옴
-// 스크롤 올리면 바가 다시 위로 감
